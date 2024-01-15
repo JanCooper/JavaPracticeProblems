@@ -4,7 +4,7 @@ import java.util.*;
 
 public class RemoveElement {
     // Given an integer array nums and an integer val, remove
-    // all occurrences of val in nums in-place, then return the
+    // all occurrences of val in nums IN PLACE, then return the
     // number of elements in nums which are not equal to val.
     // The order of the elements may be changed.
     //
