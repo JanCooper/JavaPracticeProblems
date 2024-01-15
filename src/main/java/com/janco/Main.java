@@ -3,6 +3,7 @@ package com.janco;
 import com.janco.AddTwoNumbers.*;
 import com.janco.MergeSortedArrays.*;
 import com.janco.TwoSum.*;
+import com.janco.RemoveElement.*;
 
 import java.util.*;
 
@@ -12,5 +13,6 @@ public class Main {
         TwoSum.Call();
         MergeSortedArrays.Call();
         MergeSortedArrays.Call_NoExtraSpace();
+        RemoveElement.Call();
     }
 }
