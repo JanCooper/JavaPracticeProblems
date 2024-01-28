@@ -9,20 +9,20 @@ public class RemoveDuplicatesFromSortedInPlace {
     // be kept the same. Then return the number of unique elements in nums.
 
     public static void Call(){
-        int[] nums1 = new int[] { 1,1,2 };
-        int[] nums2 = new int[] { 0,0,1,1,1,2,2,3,3,4 };
-        int[] nums3 = new int[] { 1, 1, 2, 2, 2 };
-        int[] nums4 = new int[] { 5,2,6,8,6,7,5,2,8 };
+        int[] nums1 = new int[] {1, 1, 2};
+        int[] nums2 = new int[] {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+        int[] nums3 = new int[] {1, 1, 2, 2, 2};
+        int[] nums4 = new int[] {5, 2, 6, 8, 6, 7, 5, 2, 8};
         Arrays.sort(nums4);
-        System.out.println("======= Remove Duplicates From Sortted Arrays In Place =========================");
-        System.out.println("Input: " + Arrays.toString(nums1));
-        System.out.println("Output = " + String.valueOf(RemoveDuplicatesFromSortedInPlace.SeparateIndexSortInPlace(nums1)));
-        System.out.println("Input: " + Arrays.toString(nums2));
-        System.out.println("Output = " + String.valueOf(RemoveDuplicatesFromSortedInPlace.SeparateIndexSortInPlace(nums2)));
-        System.out.println("Input: " + Arrays.toString(nums3));
-        System.out.println("Output = " + String.valueOf(RemoveDuplicatesFromSortedInPlace.SeparateIndexSortInPlace(nums3)));
-        System.out.println("Input: " + Arrays.toString(nums4));
-        System.out.println("Output = " + String.valueOf(RemoveDuplicatesFromSortedInPlace.SeparateIndexSortInPlace(nums4)));
+        System.out.println("======= Remove Duplicates From Sorted Arrays In Place =========================");
+        System.out.println("Input: nums1 " + Arrays.toString(nums1));
+        System.out.println("Output = nums1 " + (SeparateIndexSortInPlace(nums1)));
+        System.out.println("Input: nums2 " + Arrays.toString(nums2));
+        System.out.println("Output = nums2 " + (SeparateIndexSortInPlace(nums2)));
+        System.out.println("Input: nums3 " + Arrays.toString(nums3));
+        System.out.println("Output = nums3 " + (SeparateIndexSortInPlace(nums3)));
+        System.out.println("Input: nums4 " + Arrays.toString(nums4));
+        System.out.println("Output = nums4 " + (SeparateIndexSortInPlace(nums4)));
         System.out.println("================================================================================");
         System.out.println();
     }
@@ -31,7 +31,7 @@ public class RemoveDuplicatesFromSortedInPlace {
         int length  = nums1.length;
         int k = 0;
 
-        if (length == 0 || length == 1) {
+        if (length <= 1) {
             return length;
         }
 
@@ -40,7 +40,6 @@ public class RemoveDuplicatesFromSortedInPlace {
                 nums1[k++] = nums1[i];
             }
         }
-
         nums1[k++] = nums1[length - 1];
 
         return k;

@@ -14,7 +14,10 @@ public class Main {
         MergeSortedArrays.Call();
         MergeSortedArrays.Call_NoExtraSpace();
         RemoveElement.Call();
-*/
         RemoveDuplicatesFromSortedInPlace.Call();
+        RemoveDuplicatesFromSortedInPlace.Call();
+*/
+        RemoveDuplicatesFromSortedInPlace_II.Call();
+
     }
 }
